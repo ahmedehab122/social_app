@@ -1,6 +1,5 @@
-import 'package:App/layout/shop_app/cubit/cubit.dart';
 import 'package:App/modules/news_app/web_view/web_view_screen.dart';
-import 'package:App/modules/shop_app/login/shop_login_screen.dart';
+
 import 'package:App/shared/cubit/cubit.dart';
 import 'package:App/shared/network/cache_helper.dart';
 import 'package:App/shared/style/colors.dart';
@@ -417,9 +416,9 @@ Widget buildListProduct( model, context,
                         ),
                       ),
                     Spacer(),
-                    IconButton(
+                   /* IconButton(
                       onPressed: () {
-                        ShopCubit.get(context).changeFavorites(model.id);
+                       // ShopCubit.get(context).changeFavorites(model.id);
                       },
                       icon: CircleAvatar(
                         radius: 15,
@@ -433,7 +432,7 @@ Widget buildListProduct( model, context,
                           color: Colors.white,
                         ),
                       ),
-                    ),
+                    ),*/
                   ],
                 ),
               ],

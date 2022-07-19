@@ -13,11 +13,10 @@
 // v2/everything?
 // q=tesla&apiKey=88c9fb6c24d64fa9bc2a32a67abfb36c
 
-import 'package:App/modules/shop_app/login/shop_login_screen.dart';
 import 'package:App/modules/social_app/social_login/social_login_screen.dart';
 import 'package:App/shared/components/components.dart';
 import 'package:App/shared/network/cache_helper.dart';
-
+/*
 
 void signOut(context) {
   CacheHelper.removeData(
@@ -30,7 +29,7 @@ void signOut(context) {
       );
     }
   });
-}
+}*/
 
 void signOutSocial(context) {
   CacheHelper.removeData(

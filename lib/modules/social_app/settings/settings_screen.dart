@@ -3,6 +3,7 @@ import 'package:App/layout/social_app/cubit/state.dart';
 import 'package:App/modules/social_app/edit_profile/edit_profile_screen.dart';
 import 'package:App/modules/social_app/new_post/new_post_screen.dart';
 import 'package:App/shared/components/components.dart';
+import 'package:App/shared/components/constants.dart';
 import 'package:App/shared/style/colors.dart';
 import 'package:App/shared/style/icon_broken.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
@@ -227,6 +228,7 @@ class SettingsScreen extends StatelessWidget {
 
                   ),
 
+
                 ],
               ),
               SizedBox(
@@ -250,6 +252,25 @@ class SettingsScreen extends StatelessWidget {
 
                     },
                     child: (Text('unFollow')),
+                  ),
+                  OutlinedButton(
+
+                    onPressed: (){
+                      signOutSocial(context);
+                    },
+                    child: Row(
+                      children: [
+                        Icon(
+                            IconBroken.Logout
+                        ),
+                        SizedBox(
+                          width: 5,
+                        ),
+                        Text('LogOut')
+                      ],
+                    ),
+
+
                   ),
 
                 ],

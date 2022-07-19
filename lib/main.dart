@@ -1,4 +1,3 @@
-import 'package:App/layout/shop_app/cubit/cubit.dart';
 import 'package:App/layout/social_app/cubit/cubit.dart';
 import 'package:App/layout/social_app/social_layout.dart';
 import 'package:App/layout/todo_app/todo_layout.dart';
@@ -20,9 +19,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'layout/news_app/cubit/cubit.dart';
 import 'layout/news_app/news_layout.dart';
-import 'layout/shop_app/shop_layout.dart';
-import 'modules/shop_app/login/shop_login_screen.dart';
-import 'modules/shop_app/on_boarding/on_boarding_screen.dart';
+
 
 
 Future<void> firebaseMessagingBackgroundHandler
@@ -126,13 +123,13 @@ class MyApp extends StatelessWidget {
               fromShared: isDark,
             ),
         ),
-        BlocProvider(
+      /*  BlocProvider(
           create: (BuildContext context) => ShopCubit()
             ..getHomeData()
             ..getCategoriesModel()
             ..getFavoritesModel()
             ..getUserData(),
-        ),
+        ),*/
         BlocProvider(
           create: (BuildContext context) => SocialCubit()
             ..getUserData()
